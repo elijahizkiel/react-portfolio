@@ -45,11 +45,36 @@ const projects = [
     image: 'project3.jpg'
   }
 ]
-
+const links = [
+  {
+    id: 1,
+    text: 'Home',
+    url: 'home'
+  },
+  {
+    id: 2,
+    text: 'About',
+    url: 'about'
+  },
+  {
+    id: 3,
+    text: 'Services',
+    url: 'services'
+  },
+  {
+    id: 4,
+    text: 'Projects',
+    url: 'projects'
+  },
+  {
+    id: 5,
+    text: 'Contact',
+    url: 'contact'
+  }];
 function App() {
   return (
     <div className='app'>
-      <Header />
+      <Header links={links}/>
       <main>
         <Hero />
         <About />
