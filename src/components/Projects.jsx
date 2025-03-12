@@ -6,13 +6,13 @@ export default function Projects({ projects }) {
       <h2>Projects</h2>
       <div className="projects-container">
         {projects?.map((project) => (
-          <div>
+          <div key={project.id} className="project">
             <img
               className={"project-img " + project.id}
               src={project.image}
               alt={project.title}
             />
-            <CardProject key={project.id} project={project} />
+            <CardProject project={project} />
           </div>
         ))}
       </div>

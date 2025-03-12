@@ -5,7 +5,9 @@ import About from "./components/About"
 import Services from "./components/Services"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import FormSendMail from "./components/FormSendMail"
 
+import {serviceId, templateId, publicKey} from '../variables.js'
 const services = [
   {
     id: 1,
@@ -53,7 +55,10 @@ function App() {
         <About />
         <Services services={services} />
         <Projects projects={projects}/>
+        <section id="contact">
         <Contact />
+        <FormSendMail templateId={templateId} publicKey={publicKey} serviceId={serviceId} />
+        </section>
       </main>
       <Footer />
     </div>
