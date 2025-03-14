@@ -1,13 +1,12 @@
 import { Link } from "react-scroll";
-
 export default function Header({ links }) {
   return (
-    <header>
+    <header className="header">
       <nav>
         <ul>
           {links?.map((link) => (
             <li key={link.id}>
-              <Link to={link.url} smooth={true} duration={500}>
+              <Link to={link.url} smooth={true} duration={500} activeClass="active">
                 {link.text}
               </Link>
             </li>
