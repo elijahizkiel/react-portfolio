@@ -24,16 +24,25 @@ main {
 }
 
 .header {
+  display: grid;
+  grid-template-columns: 1fr 12fr;
   padding: 0 0.5rem;
   position: sticky;
-  width:105vw;
+  width: 100vw;
   top: 0;
   left: -5vw;
   z-index: 2;
   background: #1c173280;
   backdrop-filter: blur(10px);
 }
-
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 4rem;
+  width: auto;
+}
 nav {
   height: fit-content;
   display: flex;
@@ -74,7 +83,7 @@ nav ul li:hover {
 
 .btn-secondary {
   background: #242424;
-  border:2px solid #16b8f3;
+  border: 2px solid #16b8f3;
 }
 
 .btn:hover {
@@ -82,8 +91,8 @@ nav ul li:hover {
 }
 
 .hero {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   /* justify-content: space-around; */
   margin: 1.5rem 0;
   height: 80vh;
@@ -93,7 +102,7 @@ nav ul li:hover {
 .hero p {
   font: 900 5em/1.2 Georgia, "Times New Roman", Times, serif;
   width: 70%;
-  margin:0.5rem 2rem 2rem;
+  margin: 0.5rem 2rem 2rem;
   /* align-self: last baseline; */
 }
 
@@ -165,7 +174,7 @@ nav ul li:hover {
 
 .services-container {
   display: flex;
-  width:80vw;
+  width: 80vw;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
@@ -185,7 +194,7 @@ nav ul li:hover {
   box-shadow: 0px 0px 5px 5px #16b8f3;
 }
 .card-service .description {
-  color: #a9a9a9; 
+  color: #a9a9a9;
 }
 .card-service:hover {
   transition: linear 0.5s;
@@ -247,7 +256,7 @@ nav ul li:hover {
 }
 
 .card-project .description {
-  color: #a9a9a9; 
+  color: #a9a9a9;
 }
 
 .card-project .btn {
@@ -257,39 +266,40 @@ nav ul li:hover {
 }
 
 .ellipses {
-  width:120vw;
+  width: 120vw;
   position: relative;
-  top:15vw;
-  left:-15vw;
+  top: 15vw;
+  left: -15vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.ellipse-left, .ellipse-right {
+.ellipse-left,
+.ellipse-right {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  background:linear-gradient(180deg, #16b8f382, #8d14f882);
+  background: linear-gradient(180deg, #16b8f382, #8d14f882);
   z-index: 1;
 }
 
 .contacts {
-  width:110%;
+  width: 110%;
   position: relative;
-  left:-7vw;
+  left: -7vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding: 2rem;
   border-radius: 10rem 10rem 0 0;
-  background:  var(--gradient-reverse);
+  background: var(--gradient-reverse);
 }
 
 .form-send-mail {
-  width:40%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,7 +315,8 @@ nav ul li:hover {
   margin: 0.5rem;
 }
 
-.form-send-mail input, .form-send-mail textarea {
+.form-send-mail input,
+.form-send-mail textarea {
   width: 90%;
   padding: 0.5rem 0.5rem;
   margin: 0.25rem;
@@ -317,7 +328,6 @@ nav ul li:hover {
 
 .form-send-mail textarea {
   height: 5rem;
-  
 }
 
 .form-send-mail #btn-submit {
@@ -327,9 +337,9 @@ nav ul li:hover {
 .footer {
   background: var(--gradient-reverse);
   color: #fff;
-  width:110vw;
+  width: 110vw;
   position: relative;
-  left:-5vw;
+  left: -5vw;
   padding: 1rem;
   text-align: center;
 }

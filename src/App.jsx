@@ -78,7 +78,7 @@ const links = [
 function App() {
   return (
     <div className="app">
-      <Header links={links} />
+      <Header logo={assets.logo} links={links} />
       <main>
         <Hero />
         <About img={assets.aboutImg} />

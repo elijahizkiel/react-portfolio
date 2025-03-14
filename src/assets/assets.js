@@ -1,3 +1,4 @@
+import logo from './trans_bg.png';
 import aboutImg from './about-img.jpg'
 import mortgageCalc from "./mortgageCalc.png"
 import keeperApp from "./keeperApp.png"
@@ -8,6 +9,7 @@ const assets = {
   arrhythmiaPredictor: arrhythmiaPredictor,
   mortgageCalc: mortgageCalc,
   careerAdvisor: 'careerAdvisor.jpg',
+  logo: logo,
 };
 
 export default assets;
