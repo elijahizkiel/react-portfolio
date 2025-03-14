@@ -6,7 +6,7 @@ import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import FormSendMail from "./components/FormSendMail";
-import assets from "./assets/assets.js";
+import assets from "./assets/assets";
 
 import { serviceId, templateId, publicKey } from "../variables.js";
 
@@ -43,12 +43,14 @@ const projects = [
     title: "Arrhythmias Predictor",
     description: "Developed a full-stack web app using React.js and Flask to predict arrhythmias based on ECG data. Implemented user authentication in the backend and contributed to front-end UI enhancements. Collaborated using GitHub and Agile sprints.",
     image: assets.arrhythmiaPredictor,
+    link:""
   },
   {
     id: 3,
     title: "Mortgage Repayment Calculator",
     description: "Created a dynamic calculator using React to help users estimate mortgage payments, implementing real-time input handling.",    
-    image: "project3.jpg",
+    image: assets.mortgageCalc,
+    link: "https://mortgage-repayment-calculator-taupe.vercel.app/"
   },
 ];
 const links = [

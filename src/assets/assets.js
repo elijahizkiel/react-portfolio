@@ -1,10 +1,12 @@
 import aboutImg from './about-img.jpg'
-
+import mortgageCalc from "./mortgageCalc.png"
+import keeperApp from "./keeperApp.png"
+import arrhythmiaPredictor from './arrhythmiaPredictor.png'
 const assets = {
   aboutImg:aboutImg,
-  keeperApp: 'keeperApp.jpg',
-  arrhythmiaPredictor: 'arrhythmiaPredictor.jpg',
-  mortgageCalc: 'mortgageCalc.jpg',
+  keeperApp: keeperApp,
+  arrhythmiaPredictor: arrhythmiaPredictor,
+  mortgageCalc: mortgageCalc,
   careerAdvisor: 'careerAdvisor.jpg',
 };
 

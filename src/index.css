@@ -24,10 +24,11 @@ main {
 }
 
 .header {
+  padding: 0 0.5rem;
   position: sticky;
   width:105vw;
   top: 0;
-  left: -2vw;
+  left: -5vw;
   z-index: 2;
   background: #1c173280;
   backdrop-filter: blur(10px);
@@ -83,15 +84,17 @@ nav ul li:hover {
 .hero {
   display:flex;
   flex-direction:column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   margin: 1.5rem 0;
-  height: 85vh;
+  height: 80vh;
+  padding: 3rem 1rem;
 }
 
-.hero h2 {
+.hero p {
   font: 900 5em/1.2 Georgia, "Times New Roman", Times, serif;
   width: 70%;
-  margin:0.5rem 2rem 2.5rem;;
+  margin:0.5rem 2rem 2rem;
+  /* align-self: last baseline; */
 }
 
 .I-am {
@@ -99,7 +102,7 @@ nav ul li:hover {
   font-size: 2rem;
   font-weight: bold;
   color: #a9a9a9;
-  font-family: poppins, sans-serif;
+  font-family: poppins, Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -113,8 +116,8 @@ nav ul li:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
-  padding: 0 5vw;
+  height: 90vh;
+  padding: 3.5rem 5vw;
 }
 
 .about img {
@@ -138,26 +141,33 @@ nav ul li:hover {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 .about .btn {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 1rem 2rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .services {
   position: relative;
-  padding: 2rem 1rem;
+  padding: 3.5rem 1rem;
   margin: 2rem 1rem;
+  height: 90vh;
 }
+
 .services h2 {
   font-size: 2rem;
   margin: 0.5rem auto;
   text-align: center;
   color: #fff;
 }
+
 .services-container {
   display: flex;
+  width:80vw;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -174,7 +184,9 @@ nav ul li:hover {
   width: 30vw;
   box-shadow: 0px 0px 5px 5px #16b8f3;
 }
-
+.card-service .description {
+  color: #a9a9a9; 
+}
 .card-service:hover {
   transition: linear 0.5s;
   scale: 1.1;
@@ -182,8 +194,8 @@ nav ul li:hover {
 
 .projects {
   position: relative;
-  padding: 2rem 1rem;
-  margin: 2rem 1rem;
+  padding: 3.5rem 1rem;
+  margin: 1rem;
 }
 
 .projects h2 {
@@ -209,7 +221,7 @@ nav ul li:hover {
 
 .project img {
   width: 40%;
-  height: 30vh;
+  height: auto;
   background-color: #057198;
   box-shadow: var(--inner-shadow-right), var(--outer-shadow-right);
 }
@@ -234,11 +246,16 @@ nav ul li:hover {
   margin-bottom: 1rem;
 }
 
+.card-project .description {
+  color: #a9a9a9; 
+}
+
 .card-project .btn {
   font-size: 1.2rem;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .ellipses {
   width:120vw;
   position: relative;
