@@ -1,3 +1,14 @@
+/**
+ * A React functional component that renders a list of projects.
+ *
+ * @component
+ * @param {Object} props - The props object.
+ * @param {Array} props.projects - An array of project objects to be displayed.
+ * @param {string} props.projects[].id - The unique identifier for the project.
+ * @param {string} props.projects[].image - The URL of the project's image.
+ * @param {string} props.projects[].title - The title of the project.
+ * @returns {JSX.Element} The rendered Projects component.
+ */
 import CardProject from "./CardProject";
 
 export default function Projects({ projects }) {

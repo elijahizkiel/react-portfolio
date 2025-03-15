@@ -1,3 +1,23 @@
+/**
+ * Hero component that serves as the introductory section of the portfolio.
+ * It includes a brief description of the developer and a button to navigate
+ * to the "Projects" section of the page.
+ *
+ * @component
+ * @returns {JSX.Element} The Hero component.
+ *
+ * @example
+ *  Usage in a React application
+ * import Hero from './Hero';
+ * 
+ * function App() {
+ *   return (
+ *     <div>
+ *       <Hero />
+ *     </div>
+ *   );
+ * }
+ */
 import { Link } from "react-scroll";
 import Button from "./Button";
 

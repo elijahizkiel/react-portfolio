@@ -24,6 +24,50 @@ body {
   margin: 0;
 }
 
+/* 
+
+This CSS file defines the styles for a React portfolio project. Below is a breakdown of the styles:
+
+1. General Layout:
+  - `main`: Adds padding to the main content area.
+  - `header`: Sticky header with a grid layout, background blur effect, and responsive width.
+  - `logo`: Styles for the logo container and image.
+  - `horizontal-list`: Horizontal navigation list with hover effects.
+
+2. Buttons:
+  - `.btn`: Base button styles with padding, border-radius, and hover effects.
+  - `.btn-primary`: Primary button with gradient background.
+  - `.btn-secondary`: Secondary button with a solid border and background.
+
+3. Hero Section:
+  - `.hero`: Flex container for the hero section with large typography and button styles.
+  - `.I-am`: Inline-block text with custom font and color.
+
+4. About Section:
+  - `.about`: Flex container for the about section with image and description alignment.
+  - `.description`: Text styling for paragraphs and headings.
+
+5. Services Section:
+  - `.services`: Container for services with a title and card layout.
+  - `.card-service`: Individual service card with hover scaling and border styling.
+
+6. Projects Section:
+  - `.projects`: Container for project cards with alternating row directions.
+  - `.card-project`: Individual project card with headings, descriptions, and buttons.
+
+7. Decorative Elements:
+  - `.ellipses`: Decorative ellipses with gradient backgrounds for visual design.
+
+8. Contacts Section:
+  - `.contacts`: Flex container for contact information with a gradient background.
+  - `.form-send-mail`: Form styling for sending emails, including input and textarea fields.
+
+9. Footer:
+  - `.footer`: Footer section with gradient background and centered text.
+
+10. Miscellaneous:
+   - Various hover effects, transitions, and responsive design considerations are applied throughout the file.
+*/
 main {
   padding: 0 5vw;
 }
@@ -349,6 +393,41 @@ main {
   padding: 1rem;
   text-align: center;
 }
+/* 
+
+Responsive Styles for Screen Widths up to 768px:
+
+- `main`: Removes padding for a compact layout.
+- `.header`: Adjusts to inline-flex layout, spaces elements, and reduces width to 90vw.
+- `.logo img`: Scales logo height and adds margin for spacing.
+- `.vertical-list`: Switches to a vertical column layout for navigation.
+- `.vertical-list ul li`: Adds spacing, cursor pointer, and bottom border for list items.
+- `.nav-link`: Expands navigation links to full width.
+- `.toggle-btn`: Enlarges toggle button for better visibility and aligns it.
+- `.not-expanded`: Hides elements when not expanded.
+- `.btn`: Adjusts button font size for smaller screens.
+- `.hero`: Centers hero section content and adjusts padding.
+- `.I-am`: Reduces font size and aligns text to the left.
+- `.hero p`: Scales font size, adjusts width, and adds margin for spacing.
+- `.about`: Reverses flex direction, adjusts spacing, and ensures content fits.
+- `.about img`: Maintains auto height for images.
+- `.about .description`: Adjusts width, font size, and padding for descriptions.
+- `.about .par`: Sets width and height for paragraph sections.
+- `.about .btn`: Scales buttons and adjusts margins for spacing.
+- `.services`: Adds padding and ensures content height fits.
+- `.services-container`: Expands container width to full screen.
+- `.card-service`: Reduces card width for better fit.
+- `.projects`: Adds padding for project section.
+- `.project`: Switches to column-reverse layout and centers content.
+- `.project:nth-child(odd)`: Ensures consistent column-reverse layout for odd projects.
+- `.project img`: Scales project images to 90% width.
+- `.card-project`: Reduces card width for better fit.
+- `.ellipses`: Adjusts position and width for decorative ellipses.
+- `.ellipse-left, .ellipse-right`: Sets consistent size for left and right ellipses.
+- `.contacts`: Switches to column layout, adjusts border radius, and positions content.
+- `.form-send-mail`: Reduces form width for smaller screens.
+*/
+
 @media (max-width: 768px) {
   main {
     padding: 0;

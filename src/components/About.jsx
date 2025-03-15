@@ -1,3 +1,15 @@
+/**
+ * About component that displays information about the user, including an image,
+ * a brief description with a type animation effect, and buttons for contact and resume.
+ *
+ * @component
+ * @param {Object} props - The props object.
+ * @param {string} props.img - The source URL of the image to display in the About section.
+ * @returns {JSX.Element} The rendered About component.
+ *
+ * @example
+ * <About img="path/to/image.jpg" />
+ */
 import React from "react";
 import { Link } from "react-scroll";
 import Button from "./Button";

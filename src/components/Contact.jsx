@@ -1,3 +1,23 @@
+/**
+ * A React functional component that renders contact information.
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered contact information component.
+ * 
+ * @example
+ *  Usage in a React application
+ * import Contact from './Contact';
+ * 
+ * function App() {
+ *   return (
+ *     <div>
+ *       <Contact />
+ *     </div>
+ *   );
+ * }
+ * 
+ * export default App;
+ */
 export default function Contact() {
     return (
         <div className="contact">

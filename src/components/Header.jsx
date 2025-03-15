@@ -1,5 +1,31 @@
+/**
+ * Header component that renders a responsive navigation bar with links and a logo.
+ * The navigation bar adapts to the screen size, displaying a horizontal list for larger screens
+ * and a collapsible vertical list for smaller screens.
+ *
+ * @component
+ * @param {Object} props - The props object.
+ * @param {Array} props.links - An array of link objects to be displayed in the navigation bar.
+ * @param {string} props.links[].id - A unique identifier for each link.
+ * @param {string} props.links[].url - The URL or section ID the link points to.
+ * @param {string} props.links[].text - The display text for the link.
+ * @param {string} props.logo - The source URL for the logo image.
+ *
+ * @returns {JSX.Element} The rendered Header component.
+ *
+ * @example
+ * const links = [
+ *   { id: '1', url: 'home', text: 'Home' },
+ *   { id: '2', url: 'about', text: 'About' },
+ *   { id: '3', url: 'services', text: 'Services' },
+ * ];
+ * const logo = '/path/to/logo.png';
+ *
+ * <Header links={links} logo={logo} />
+ */
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
+
 export default function Header({ links, logo }) {
   const [hidden, setHidden] = useState(window.innerWidth < 780);
   useEffect(() => {
