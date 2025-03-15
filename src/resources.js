@@ -1,4 +1,5 @@
 import assets from "./assets/assets";
+import Experience from "./components/Experience";
 
 const services = [
   {
@@ -66,6 +67,11 @@ const links = [
     id: 4,
     text: "Projects",
     url: "projects",
+  },
+  {
+    id:5,
+    text:"Experience",
+    url:"experiences"
   },
 ];
 const experiences = [
