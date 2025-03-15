@@ -323,7 +323,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  padding: 3rem 1rem;
   margin: 1rem;
 }
 .experiences h2 {
