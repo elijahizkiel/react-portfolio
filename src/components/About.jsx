@@ -26,8 +26,9 @@ const About = ({ img }) => {
           sequence={[`Hi, I'm Elias Hizkiel! I am a passionate developer with experience in
           building web applications using modern technologies like React, Flask,
           and more. I love to learn and explore new technologies and
-          continuously improve my skills.`, 1000, " "]}
+          continuously improve my skills.`, 1000, ]}
           speed={75}
+          cursor={false}
           repeat={Infinity}
           deletionSpeed={50}
         />

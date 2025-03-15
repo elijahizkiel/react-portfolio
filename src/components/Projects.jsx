@@ -10,6 +10,7 @@
  * @returns {JSX.Element} The rendered Projects component.
  */
 import CardProject from "./CardProject";
+import { motion } from "framer-motion";
 
 export default function Projects({ projects }) {
   return (
@@ -18,11 +19,18 @@ export default function Projects({ projects }) {
       <div className="projects-container">
         {projects?.map((project) => (
           <div key={project.id} className="project">
+          <motion.div
+            whileInView={{ opacity: 1, x:project.id % 2 === 0? "3%":"-15%" }}
+            animate={{ opacity: 0.5, x: project.id % 2 === 0 ? "-25%" : "2%" }}
+            transition={{ duration: 1 }}
+            className="motion"
+          > 
             <img
               className={"project-img " + project.id}
               src={project.image}
               alt={project.title}
             />
+          </motion.div>
             <CardProject project={project} />
           </div>
         ))}
