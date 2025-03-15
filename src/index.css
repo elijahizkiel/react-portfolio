@@ -578,7 +578,10 @@ Responsive Styles for Screen Widths up to 768px:
     flex-direction: column-reverse;
   }
   .project img {
-    width: 90%;
+    width: 100%;
+  }
+  .project img:hover {
+    scale:1.5
   }
   .card-project {
     width: 80%;
