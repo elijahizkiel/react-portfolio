@@ -14,9 +14,14 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+html {
+  padding: 0;
+}
 
 body {
   font-family: "Poppins", "Serial", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 main {
@@ -43,7 +48,8 @@ main {
   height: 4rem;
   width: auto;
 }
-nav {
+
+.horizontal-list {
   height: fit-content;
   display: flex;
   justify-content: space-around;
@@ -52,19 +58,19 @@ nav {
   color: #fff;
 }
 
-nav ul {
+.horizontal-list ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
 
-nav ul li {
+.horizontal-list ul li {
   margin: 0 1rem;
   cursor: pointer;
   padding: 0.1rem 0.25rem;
 }
 
-nav ul li:hover {
+.horizontal-list ul li:hover {
   background-color: #5de3fe;
   border-radius: 5px;
 }
@@ -93,8 +99,7 @@ nav ul li:hover {
 .hero {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   height: 80vh;
   padding: 3rem 1rem;
 }
@@ -103,7 +108,6 @@ nav ul li:hover {
   font: 900 5em/1.2 Georgia, "Times New Roman", Times, serif;
   width: 70%;
   margin: 0.5rem 2rem 2rem;
-  /* align-self: last baseline; */
 }
 
 .I-am {
@@ -141,9 +145,11 @@ nav ul li:hover {
   line-height: 1.6;
 }
 
-.about .description p {
+.about .description .par {
   margin-bottom: 1rem;
   color: #a9a9a9;
+  width: 100%;
+  display: block;
 }
 
 .about .description h2 {
@@ -342,4 +348,143 @@ nav ul li:hover {
   left: -5vw;
   padding: 1rem;
   text-align: center;
+}
+@media (max-width: 768px) {
+  main {
+    padding: 0;
+  }
+  .header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 6rem;
+    width: 90vw;
+  }
+  .logo img {
+    height: 3rem;
+    margin: 0.5rem;
+  }
+
+  .vertical-list {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .vertical-list ul li {
+    margin: 0 1rem;
+    cursor: pointer;
+    list-style: none;
+    padding: 0.5rem 0.25rem;
+    border-bottom: 1px solid #8d14f8;
+  }
+  .nav-link {
+    width: 100%;
+  }
+  .toggle-btn {
+    font-size: 2rem;
+    align-self: last baseline;
+    cursor: pointer;
+  }
+  .not-expanded {
+    display: none;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .hero {
+    width: 100vw;
+    padding: 3rem 2vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .I-am {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: left;
+  }
+  .hero p {
+    font-size: 3rem;
+    width: 80%;
+    margin: 0.5rem 0rem 3rem;
+  }
+  .about {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 1rem;
+  }
+  .about img {
+    height: auto;
+  }
+  .about .description {
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 2rem 0rem;
+    margin: 1rem;
+  }
+  .about .par {
+    width:90%;
+    height: 45vh;
+  }
+  .about .btn {
+    display: inline-block;
+    font-size: 0.8rem;
+    width: fit-content;
+    margin: 0.6rem;
+  }
+  .services {
+    padding: 3rem;
+    height: fit-content;
+  }
+  .services-container {
+    width: 100%;
+  }
+  .card-service {
+    width: 90vw;
+  }
+  .projects {
+    padding: 3rem 1rem;
+  }
+  .project {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .project:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  .project img {
+    width: 90%;
+  }
+  .card-project {
+    width: 80%;
+  }
+  .ellipses {
+    left: -12vw;
+    width: 120vw;
+  }
+  .ellipse-left,
+  .ellipse-right {
+    width: 20vh;
+    height: 20vh;
+  }
+  .contacts {
+    flex-direction: column;
+    border-radius: 7rem 7rem 0 0;
+    width: 100%;
+    left: -3vw;
+  }
+  .form-send-mail {
+    width: 90%;
+  }
+}
+@media (max-width: 430px) {
+  .about img {
+    display: none;
+  }
+  .about .description {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
 }

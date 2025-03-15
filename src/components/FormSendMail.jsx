@@ -31,7 +31,7 @@ function FormSendMail({ publicKey, templateId, serviceId }) {
 
       <div className="email">
         <label htmlFor="user_email">Email:</label>
-        <input type="email" id="user_mail" name="user_email" required />
+        <input type="email" id="user_email" name="user_email" required />
       </div>
 
       <div className="subject">
