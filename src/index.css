@@ -22,6 +22,7 @@ body {
   font-family: "Poppins", "Serial", sans-serif;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* 
@@ -549,7 +550,6 @@ Responsive Styles for Screen Widths up to 768px:
   }
   .about .par {
     width:90%;
-    height: 45vh;
   }
   .about .btn {
     display: inline-block;
@@ -558,8 +558,9 @@ Responsive Styles for Screen Widths up to 768px:
     margin: 0.6rem;
   }
   .services {
-    padding: 3rem;
+    padding: 3rem 3rem 3rem 2rem;
     height: fit-content;
+    width:75%;
   }
   .services-container {
     width: 100%;
@@ -606,6 +607,9 @@ Responsive Styles for Screen Widths up to 768px:
   }
 }
 @media (max-width: 430px) {
+  body {
+    overflow-x: hidden;
+  }
   .about img {
     display: none;
   }
