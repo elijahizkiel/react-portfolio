@@ -11,11 +11,23 @@ import assets from "./assets/assets";
 import { serviceId, templateId, publicKey } from "../variables.js";
 import { experiences, links, projects, services } from "./resources.js";
 import ExperienceCollection from "./components/ExperienceCollection.jsx";
+import { useState } from "react";
 
 function App() {
+  const [theme, setTheme] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
+
+  const mql = window.matchMedia("(prefers-color-scheme: dark)")
+    mql.addEventListener("change", (event) => {
+      setTheme(event.matches);
+    });
   return (
     <div className="app">
-      <Header logo={assets.logo} links={links} />
+      <Header
+        logo={theme ? assets.logoWhite : assets.logoBlack}
+        links={links}
+      />
       <main>
         <Hero />
         <About img={assets.aboutImg} />
