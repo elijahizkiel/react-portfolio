@@ -479,6 +479,12 @@ Responsive Styles for Screen Widths up to 768px:
     --gradient: linear-gradient(60deg, #fff, #16b8f3);
     --gradient-reverse: linear-gradient(-60deg, #16b8f3, white);
   }
+  @media (max-width: 768){
+    :root {
+      --inner-shadow-right: 8px 8px 0px 1px #fff;
+      --outer-shadow-right: 9px 9px 0px 3px #242424;
+    }
+  }
   .services h2,
   .projects h2,
   .experiences h2,
@@ -696,10 +702,6 @@ Responsive Styles for Screen Widths up to 768px:
   }
 }
 @media (max-width: 430px) {
-  :root {
-    --inner-shadow-right: 8px 8px 0px 1px #fff;
-    --outer-shadow-right: 9px 9px 0px 3px #242424;
-  }
   body {
     overflow-x: hidden;
   }
