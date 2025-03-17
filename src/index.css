@@ -2,15 +2,8 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --inner-shadow-right: 14px 14px 0px 0px #242424;
-  --outer-shadow-right: 15px 15px 0px 5px #5de3fe;
-  --outer-shadow-left: -15px 15px 0px 5px #5de3fe;
-  --inner-shadow-left: -14px 14px 0px 0px #242424;
-  --gradient: linear-gradient(60deg, #16b8f3, #8d14f8);
-  --gradient-reverse: linear-gradient(60deg, #480186, #057198);
 
   color-scheme: light dark;
-  background-color: #1c1732;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -271,7 +264,7 @@ main {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
   margin: 1rem;
   padding: 1rem;
 }
@@ -280,8 +273,8 @@ main {
   flex-direction: row-reverse;
 }
 .project .motion {
-  width:50%;
-  height:100%;
+  width: 50%;
+  height: 100%;
 }
 .project img {
   width: 100%;
@@ -334,7 +327,8 @@ main {
   text-align: center;
   color: #fff;
 }
-.experiences-one, .experiences-two {
+.experiences-one,
+.experiences-two {
   width: 75%;
   display: flex;
   flex-direction: row;
@@ -347,9 +341,9 @@ main {
   overflow: hidden;
 }
 .experience {
- width:4rem;
- height:auto;
- margin:1rem 2rem;
+  width: 4rem;
+  height: auto;
+  margin: 1rem 2rem;
 }
 
 .moving {
@@ -357,9 +351,9 @@ main {
 }
 
 .experience img {
-  width:100%;
-  height:auto;
-} 
+  width: 100%;
+  height: auto;
+}
 
 .ellipses {
   width: 120vw;
@@ -473,10 +467,104 @@ Responsive Styles for Screen Widths up to 768px:
 - `.contacts`: Switches to column layout, adjusts border radius, and positions content.
 - `.form-send-mail`: Reduces form width for smaller screens.
 */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1d114f;
+    background-color: #fff;
+
+    --inner-shadow-right: 14px 14px 0px 0px #fff;
+    --outer-shadow-right: 15px 15px 0px 5px #242424;
+    --outer-shadow-left: -15px 15px 0px 5px #242424;
+    --inner-shadow-left: -14px 14px 0px 0px #fff;
+    --gradient: linear-gradient(60deg, #fff, #16b8f3);
+    --gradient-reverse: linear-gradient(-60deg, #16b8f3, white);
+  }
+  .services h2,
+  .projects h2,
+  .experiences h2,
+  body {
+    color: #1d114f;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #f0f0f080;
+  }
+  .horizontal-list {
+    color: #1d114f;
+  }
+  .horizontal-list ul li:hover {
+    background-color: #8d14f8;
+  }
+  .btn {
+    border: 2px solid #8d11f8;
+  }
+  .btn-primary {
+    background: #fff;
+  }
+  .btn.btn-secondary {
+    background-color: #16b8f3;
+    color: #fff;
+  }
+  .card-service {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 0px 5px 5px #16b8f3;
+  }
+  .card-service .description {
+    color: #1d114f;
+  }
+  .card-project h3 {
+    color: #8d14f8;
+  }
+  .card-project .description {
+    color: #1d114f;
+  }
+  .btn {
+    color: #1d114f;
+  }
+  .ellipse-left {
+    background: linear-gradient(180deg, #16b8f382, #fff);
+  }
+  .ellipse-right {
+    background: linear-gradient(160deg, #fbfbfb, #16b8f382);
+  }
+  .form-send-mail {
+    background: linear-gradient(45deg, #16b8f3, white);
+  }
+  .form-send-mail input,
+  .form-send-mail textarea {
+    background-color: #fff;
+    color: #1c1732;
+    outline-color: #16b8f3;
+  }
+  .btn#btn-submit {
+    background-color: #16b8f3;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .footer {
+    color: #1c1732;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #1c1732;
+
+    --inner-shadow-right: 14px 14px 0px 0px #242424;
+    --outer-shadow-right: 15px 15px 0px 5px #5de3fe;
+    --outer-shadow-left: -15px 15px 0px 5px #5de3fe;
+    --inner-shadow-left: -14px 14px 0px 0px #242424;
+    --gradient: linear-gradient(60deg, #16b8f3, #8d14f8);
+    --gradient-reverse: linear-gradient(60deg, #480186, #057198);
+  }
+}
 
 @media (max-width: 768px) {
   main {
-    width:100%;
+    width: 100%;
     padding: 0;
     overflow-x: hidden;
   }
@@ -550,7 +638,7 @@ Responsive Styles for Screen Widths up to 768px:
     margin: 1rem;
   }
   .about .par {
-    width:90%;
+    width: 90%;
   }
   .about .btn {
     display: inline-block;
@@ -561,10 +649,10 @@ Responsive Styles for Screen Widths up to 768px:
   .services {
     padding: 3rem 3rem 3rem 2rem;
     height: fit-content;
-    width:75%;
+    width: 100%;
   }
   .services-container {
-    width: 100%;
+    width: 80%;
   }
   .card-service {
     width: 85%;
@@ -583,7 +671,7 @@ Responsive Styles for Screen Widths up to 768px:
     width: 100%;
   }
   .project img:hover {
-    scale:1.5
+    scale: 1.5;
   }
   .card-project {
     width: 80%;
@@ -608,8 +696,21 @@ Responsive Styles for Screen Widths up to 768px:
   }
 }
 @media (max-width: 430px) {
+  :root {
+    --inner-shadow-right: 8px 8px 0px 1px #fff;
+    --outer-shadow-right: 9px 9px 0px 3px #242424;
+  }
   body {
     overflow-x: hidden;
+  }
+  main {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+  }
+  .hero {
+    padding: 2rem 1rem;
+    height: fit-content;
   }
   .about img {
     display: none;
@@ -619,5 +720,32 @@ Responsive Styles for Screen Widths up to 768px:
     font-size: 1rem;
     padding: 1rem;
     margin: 1rem;
+  }
+  .services {
+    padding: 3rem 3rem 3rem 1rem;
+  }
+  .project h3 {
+    font-size: 1.5rem;
+  }
+  .project .description {
+    font-size: 1rem;
+  }
+  .project .motion {
+    width: 90%;
+  }
+  .project img:hover {
+    scale: 1
+  }
+  .card-project{
+    width:100%;
+  }
+  .ellipses {
+    display: none;
+  }
+  .contacts {
+    padding: 1rem;
+  }
+  .form-send-mail {
+    width: 80%;
   }
 }

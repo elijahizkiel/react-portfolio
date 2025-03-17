@@ -21,7 +21,7 @@ export default function Services({ services }) {
         {services?.map((service) => (
           <motion.div
             key={service.id}
-            whileInView={{ opacity: 1, x: 25 }}
+            whileInView={{ opacity: 1, x: 1 }}
             animate={{ opacity: 0.5, x: service.id % 2 !== 0 ? -150 : 150 }}
             transition={{ duration: 1 }}
           >

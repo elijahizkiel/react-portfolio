@@ -20,8 +20,8 @@ export default function Projects({ projects }) {
         {projects?.map((project) => (
           <div key={project.id} className="project">
           <motion.div
-            whileInView={{ opacity: 1, x:project.id % 2 === 0? "3%":"-15%" }}
-            animate={{ opacity: 0.5, x: project.id % 2 === 0 ? "-25%" : "2%" }}
+            whileInView={{ opacity: 1, x:0 }}
+            animate={{ opacity: 0.5, x: project.id % 2 === 0 ? "-50%" : "50%" }}
             transition={{ duration: 1 }}
             className="motion"
           > 
